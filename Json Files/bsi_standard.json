@@ -1,0 +1,2182 @@
+[
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-1.4",
+    "section_number": "1.4",
+    "title": "Application",
+    "parent": "1",
+    "chunk_id": "BSI_1.4_0",
+    "content": "The present standard describes how an information security management system (ISMS) can be designed. A management system encompasses all the provisions ensuring the supervision and management so that the organisation can achieve its objectives.",
+    "summary": "The present standard describes how an information security management system (ISMS) can be designed. A management system encompasses all the provisions ensuring the supervision and management so that the organisation can achieve its objectives.",
+    "keywords": [
+      "security",
+      "management",
+      "information",
+      "standard",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-1.4",
+    "section_number": "1.4",
+    "title": "Application",
+    "parent": "1",
+    "chunk_id": "BSI_1.4_1",
+    "content": "An information security management system therefore specifies the instruments and methods that the management level of an organisation should use to comprehensibly manage the tasks and activities aimed at achieving information security. This BSI standard provides answers to, among other things, the following questions: What are the success factors in the field of information security management?",
+    "summary": "The present standard describes how an information security management system (ISMS) can be designed. A management system encompasses all the provisions ensuring the supervision and management so that the organisation can achieve its objectives.",
+    "keywords": [
+      "security",
+      "management",
+      "information",
+      "standard",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-1.4",
+    "section_number": "1.4",
+    "title": "Application",
+    "parent": "1",
+    "chunk_id": "BSI_1.4_2",
+    "content": "How can the security process be managed and monitored by the management responsible? How are security objectives and an appropriate security strategy developed?",
+    "summary": "The present standard describes how an information security management system (ISMS) can be designed. A management system encompasses all the provisions ensuring the supervision and management so that the organisation can achieve its objectives.",
+    "keywords": [
+      "security",
+      "management",
+      "information",
+      "standard",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-1.4",
+    "section_number": "1.4",
+    "title": "Application",
+    "parent": "1",
+    "chunk_id": "BSI_1.4_3",
+    "content": "How are security safeguards selected and security concepts drawn up? How can an already achieved level of security be maintained and improved in the long run?",
+    "summary": "The present standard describes how an information security management system (ISMS) can be designed. A management system encompasses all the provisions ensuring the supervision and management so that the organisation can achieve its objectives.",
+    "keywords": [
+      "security",
+      "management",
+      "information",
+      "standard",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-1.4",
+    "section_number": "1.4",
+    "title": "Application",
+    "parent": "1",
+    "chunk_id": "BSI_1.4_4",
+    "content": "This management standard provides a clear overview of the most important tasks of security management. The BSI provides assistance with implementing these recommendations in the form of the ITGrundschutz methodology.",
+    "summary": "The present standard describes how an information security management system (ISMS) can be designed. A management system encompasses all the provisions ensuring the supervision and management so that the organisation can achieve its objectives.",
+    "keywords": [
+      "security",
+      "management",
+      "information",
+      "standard",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-1.4",
+    "section_number": "1.4",
+    "title": "Application",
+    "parent": "1",
+    "chunk_id": "BSI_1.4_5",
+    "content": "The IT-Grundschutz provides different sizes and types of organisations with step-by-step guides to developing an information security management in practice and gives specific safeguards for all aspects of information security. The IT-Grundschutz methodology is described in BSI standard 200-2 (see [BSI2]) and is designed in a way that a level of security can be achieved that is appropriate regarding both the basic threat situation and the business objectives.",
+    "summary": "The present standard describes how an information security management system (ISMS) can be designed. A management system encompasses all the provisions ensuring the supervision and management so that the organisation can achieve its objectives.",
+    "keywords": [
+      "security",
+      "management",
+      "information",
+      "standard",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-1.4",
+    "section_number": "1.4",
+    "title": "Application",
+    "parent": "1",
+    "chunk_id": "BSI_1.4_6",
+    "content": "In addition to this, requirements for the practical implementation of the appropriate level of security are formulated in the IT-Grundschutz compendium. If the term IT system is used in this standard, this term shall not only refer to classical IT systems such as servers, personal computers, smartphones or network components.",
+    "summary": "The present standard describes how an information security management system (ISMS) can be designed. A management system encompasses all the provisions ensuring the supervision and management so that the organisation can achieve its objectives.",
+    "keywords": [
+      "security",
+      "management",
+      "information",
+      "standard",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-1.4",
+    "section_number": "1.4",
+    "title": "Application",
+    "parent": "1",
+    "chunk_id": "BSI_1.4_7",
+    "content": "Here, the term IT systems also includes Industrial Control Systems (ICS) as well as components from the field of Internet of Things (IoT). Information Security Management Systems Version 1.0",
+    "summary": "The present standard describes how an information security management system (ISMS) can be designed. A management system encompasses all the provisions ensuring the supervision and management so that the organisation can achieve its objectives.",
+    "keywords": [
+      "security",
+      "management",
+      "information",
+      "standard",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_0",
+    "content": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_1",
+    "content": "These international standards are partly available as translated DIN standards. The most important standards of the ISO/IEC 2700x series include: ISO/IEC 27000 (Information security management systems Overview and vocabulary) This standard provides an overview of information security management systems (ISMS) and on the correlations of the different standards of the ISO/IEC 2700x family.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_2",
+    "content": "Furthermore, the standard includes the basic terms and definitions for ISMSs. ISO/IEC 27001 (Information security management systems Requirements) The ISO standard 27001 is an international standard on information security management also allowing for certification.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_3",
+    "content": "On approx. 9 pages, the ISO/IEC 27001 provides normative specifications regarding the implementation, operation, and enhancement of a documented information security management system.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_4",
+    "content": "In a normative annex, more than a hundred safeguards (controls) are mentioned that should be selected in consideration of the relevant risks. However, the readers are not provided with any assistance for practical implementation.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_5",
+    "content": "Up to now, the requirements of the ISO/IEC 27001 oriented on a lifecycle model also referred to as PDCA cycle according to the names of the different phases ( Plan , Do , Check , Act ). In order to achieve compatibility with annex SL (policy for developing and reviewing ISO standards for management systems), the PDCA cycle is no longer mentioned explicitly in the reviewed version of the ISO/IEC 27001.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_6",
+    "content": "This is intended to make clear that the sequence of the individual requirements in the standard does not allow to draw any conclusion regarding their respective importance or their implementation sequence. Any activities related to establishing and operating the ISMS can still be performed according to the PDCA cycle, however.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_7",
+    "content": "ISO/IEC 27002 (Code of practice for information security controls) This standard supports in the selection and implementation of the safeguards described in ISO/IEC 27001 in order to establish a working security management and embed it in the organisation. The security safeguards appropriate in this regard are described on the 90 pages of the standard ISO/IEC 27002.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_8",
+    "content": "The recommendations are primarily intended for the management level and therefore hardly include any technical information. The implementation of the security recommendations of ISO/IEC 27002 is one of many options for fulfilling the requirements of the ISO standard 27001.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_9",
+    "content": "ISO/IEC 27004 (Monitoring, measurement, analysis and evaluation) The ISO standard 27004 addresses the evaluation of the implementation and efficiency of an ISMS based on different variables. ISO/IEC 27005 (Information security risk management) This standard includes framework recommendations for information security risk management.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_10",
+    "content": "Among other things, it supports in the implementation of the recommendations from ISO/IEC 27001. However, no specific risk management method is specified in so doing.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_11",
+    "content": "This standard in turn is mainly based on the standard ISO/IEC 31000 Risk management Principles and guidelines on implementation (see [31000]). The supporting standard ISO/IEC 31010 Risk assessment techniques (see [31010]) includes a description on how risk assessment can be integrated in a risk management system and how risks can be identified, evaluated, assessed, and handled.",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-2.1.1",
+    "section_number": "2.1.1",
+    "title": "ISO standards on information security",
+    "parent": "2.1",
+    "chunk_id": "BSI_2.1.1_12",
+    "content": "Annex B of ISO 31010 provides a comprehensive overview of risk assessment methods, 31 different methods are mentioned here. ISO/IEC 27006 (Requirements for bodies providing audit and certification of information security management systems)",
+    "summary": "In the international standardisation organisations ISO and IEC, the standards on information security are merged in the continuously growing 2700x series. Internationally, these standards are called standards.",
+    "keywords": [
+      "management",
+      "security",
+      "standard",
+      "information",
+      "standards"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3.1",
+    "section_number": "3.1",
+    "title": "Components of an information security management system",
+    "parent": "3",
+    "chunk_id": "BSI_3.1_0",
+    "content": "On the one hand, the term management refers to the management level, i.e. the entirety of the managers of an organisation, and, on the other hand, it generally also refers to the task of managing the organisation.",
+    "summary": "On the one hand, the term management refers to the management level, i.e. the entirety of the managers of an organisation, and, on the other hand, it generally also refers to the task of managing the organisation.",
+    "keywords": [
+      "management",
+      "security",
+      "information",
+      "organisation",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3.1",
+    "section_number": "3.1",
+    "title": "Components of an information security management system",
+    "parent": "3",
+    "chunk_id": "BSI_3.1_1",
+    "content": "For the purpose of differentiation, the group of responsible managers shall hereinafter be referred to as management level , when referring to the responsible managers and when there is a risk of confusion with the term management as an activity (supervising, directing, and planning). Figure 2: Components of an information security management system (ISMS) A management system embraces all the policies pertaining to supervision and management for the purpose of achieving the organisation s objectives.",
+    "summary": "On the one hand, the term management refers to the management level, i.e. the entirety of the managers of an organisation, and, on the other hand, it generally also refers to the task of managing the organisation.",
+    "keywords": [
+      "management",
+      "security",
+      "information",
+      "organisation",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3.1",
+    "section_number": "3.1",
+    "title": "Components of an information security management system",
+    "parent": "3",
+    "chunk_id": "BSI_3.1_2",
+    "content": "The part of the management system dealing with information security is referred to as the information security management system (ISMS). The ISMS specifies the instruments and methods that the management level should use to clearly manage (plan, adopt, implement, supervise and improve) the tasks and activities aimed at achieving information security.",
+    "summary": "On the one hand, the term management refers to the management level, i.e. the entirety of the managers of an organisation, and, on the other hand, it generally also refers to the task of managing the organisation.",
+    "keywords": [
+      "management",
+      "security",
+      "information",
+      "organisation",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3.1",
+    "section_number": "3.1",
+    "title": "Components of an information security management system",
+    "parent": "3",
+    "chunk_id": "BSI_3.1_3",
+    "content": "ISMS involves the following essential components (see Figure 2): management principles resources employees security process o information security policy which the security objectives and strategies for their implementation are documented in o security concept o security organisation",
+    "summary": "On the one hand, the term management refers to the management level, i.e. the entirety of the managers of an organisation, and, on the other hand, it generally also refers to the task of managing the organisation.",
+    "keywords": [
+      "management",
+      "security",
+      "information",
+      "organisation",
+      "system"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3",
+    "section_number": "3",
+    "title": "ISMS definition and process description",
+    "parent": null,
+    "chunk_id": "BSI_3_0",
+    "content": "Information Security Management Systems Version 1.0 Figure 5: Lifecycle according to Deming (PDCA cycle) As a matter of principle, the PDCA cycle can be applied to all tasks within the security process. The lifecycle of the security concept and the security organisation can also be described clearly using this cycle.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 5: Lifecycle according to Deming (PDCA cycle) As a matter of principle, the PDCA cycle can be applied to all tasks within the security process. The lifecycle of the security concept and the security organisation can also be described clearly using this cycle.",
+    "keywords": [
+      "security",
+      "process",
+      "organisation",
+      "should",
+      "lifecycle"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3",
+    "section_number": "3",
+    "title": "ISMS definition and process description",
+    "parent": null,
+    "chunk_id": "BSI_3_1",
+    "content": "The relevant chapters in this document therefore use the four phases of this lifecycle model as their basis. During the planning phase of the security process, the framework conditions are identified and analysed, the security objectives are determined, and a security strategy is drawn up containing the basic statements on how the set objectives should be achieved.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 5: Lifecycle according to Deming (PDCA cycle) As a matter of principle, the PDCA cycle can be applied to all tasks within the security process. The lifecycle of the security concept and the security organisation can also be described clearly using this cycle.",
+    "keywords": [
+      "security",
+      "process",
+      "organisation",
+      "should",
+      "lifecycle"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3",
+    "section_number": "3",
+    "title": "ISMS definition and process description",
+    "parent": null,
+    "chunk_id": "BSI_3_2",
+    "content": "The security strategy is implemented with the help of the security concept and an appropriate security organisation structure. Security concept and organisation require planning, implementation, and a performance review.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 5: Lifecycle according to Deming (PDCA cycle) As a matter of principle, the PDCA cycle can be applied to all tasks within the security process. The lifecycle of the security concept and the security organisation can also be described clearly using this cycle.",
+    "keywords": [
+      "security",
+      "process",
+      "organisation",
+      "should",
+      "lifecycle"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3",
+    "section_number": "3",
+    "title": "ISMS definition and process description",
+    "parent": null,
+    "chunk_id": "BSI_3_3",
+    "content": "The performance review of the superior security process involves regularly examining whether the framework conditions (e.g. laws, objectives of the organisation, or the environment) have changed and whether the security concept and organisation have proven to be effective and efficient.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 5: Lifecycle according to Deming (PDCA cycle) As a matter of principle, the PDCA cycle can be applied to all tasks within the security process. The lifecycle of the security concept and the security organisation can also be described clearly using this cycle.",
+    "keywords": [
+      "security",
+      "process",
+      "organisation",
+      "should",
+      "lifecycle"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3",
+    "section_number": "3",
+    "title": "ISMS definition and process description",
+    "parent": null,
+    "chunk_id": "BSI_3_4",
+    "content": "However, since different organisations have different initial conditions, security requirements, and financial resources, this methodology serves as a sound basis for orientation, but must be adapted to the specific needs by every government agency and company. Each organisation must define and specify individually the form of the lifecycle model that is appropriate for them.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 5: Lifecycle according to Deming (PDCA cycle) As a matter of principle, the PDCA cycle can be applied to all tasks within the security process. The lifecycle of the security concept and the security organisation can also be described clearly using this cycle.",
+    "keywords": [
+      "security",
+      "process",
+      "organisation",
+      "should",
+      "lifecycle"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3",
+    "section_number": "3",
+    "title": "ISMS definition and process description",
+    "parent": null,
+    "chunk_id": "BSI_3_5",
+    "content": "Small government agencies and companies should not be put off by this, since the effort required for the security process generally depends on the size of the organisation. In a very large company with many departments and individuals involved it is therefore probably necessary to implement a rather formal process precisely defining what internal and external audits are needed, who should report to whom, who should draw up decision papers, and when the management should meet to discuss the security process.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 5: Lifecycle according to Deming (PDCA cycle) As a matter of principle, the PDCA cycle can be applied to all tasks within the security process. The lifecycle of the security concept and the security organisation can also be described clearly using this cycle.",
+    "keywords": [
+      "security",
+      "process",
+      "organisation",
+      "should",
+      "lifecycle"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-3",
+    "section_number": "3",
+    "title": "ISMS definition and process description",
+    "parent": null,
+    "chunk_id": "BSI_3_6",
+    "content": "In a small company, on the other hand, an annual meeting between the managing director and the IT service provider, within the framework of which they discuss the problems experienced throughout the past year, the costs incurred, the latest technological developments, and other factors, might already be sufficient in order to critically examine the success of the security process.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 5: Lifecycle according to Deming (PDCA cycle) As a matter of principle, the PDCA cycle can be applied to all tasks within the security process. The lifecycle of the security concept and the security organisation can also be described clearly using this cycle.",
+    "keywords": [
+      "security",
+      "process",
+      "organisation",
+      "should",
+      "lifecycle"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4",
+    "section_number": "4",
+    "title": "Management principles",
+    "parent": null,
+    "chunk_id": "BSI_4_0",
+    "content": "Information security management or abbreviated IS management is the term referring to the planning and supervisory functions that are required to assure the meaningful development, practical feasibility, and effectiveness of a well thought-through and systematic security process as well as all the security safeguards required for this. This also includes the processes of meeting and complying with statutory and regulatory requirements.",
+    "summary": "Information security management or abbreviated IS management is the term referring to the planning and supervisory functions that are required to assure the meaningful development, practical feasibility, and effectiveness of a well thought-through and systematic security process as well as all the security safeguards required for this. This also includes the processes of meeting and complying with statutory and regulatory requirements.",
+    "keywords": [
+      "management",
+      "security",
+      "safeguards",
+      "principles",
+      "practice"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4",
+    "section_number": "4",
+    "title": "Management principles",
+    "parent": null,
+    "chunk_id": "BSI_4_1",
+    "content": "There are various concepts as to what an efficient IS management may look like and which organisational structures are expedient in this regard. Regardless of the form an IS management system takes, there are several principles that must be considered.",
+    "summary": "Information security management or abbreviated IS management is the term referring to the planning and supervisory functions that are required to assure the meaningful development, practical feasibility, and effectiveness of a well thought-through and systematic security process as well as all the security safeguards required for this. This also includes the processes of meeting and complying with statutory and regulatory requirements.",
+    "keywords": [
+      "management",
+      "security",
+      "safeguards",
+      "principles",
+      "practice"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4",
+    "section_number": "4",
+    "title": "Management principles",
+    "parent": null,
+    "chunk_id": "BSI_4_2",
+    "content": "Some of the management principles presented here might sound somewhat trivial, since most managers will consider them a matter of course. Paradoxically, however, it is precisely the simple things that are put into practice incorrectly or omitted completely.",
+    "summary": "Information security management or abbreviated IS management is the term referring to the planning and supervisory functions that are required to assure the meaningful development, practical feasibility, and effectiveness of a well thought-through and systematic security process as well as all the security safeguards required for this. This also includes the processes of meeting and complying with statutory and regulatory requirements.",
+    "keywords": [
+      "management",
+      "security",
+      "safeguards",
+      "principles",
+      "practice"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4",
+    "section_number": "4",
+    "title": "Management principles",
+    "parent": null,
+    "chunk_id": "BSI_4_3",
+    "content": "Although discipline, patience, the ability to take on responsibility, and preparation of projects in a realistic and careful manner are recognised values in many organisations in theory, they are not always put into practice. Particularly the less spectacular safeguards, such as process optimisation, training and awareness-raising measures, as well as staff motivation, or the drawing up of comprehensible documentation, are the ones that improve the level of security in practice quite substantially.",
+    "summary": "Information security management or abbreviated IS management is the term referring to the planning and supervisory functions that are required to assure the meaningful development, practical feasibility, and effectiveness of a well thought-through and systematic security process as well as all the security safeguards required for this. This also includes the processes of meeting and complying with statutory and regulatory requirements.",
+    "keywords": [
+      "management",
+      "security",
+      "safeguards",
+      "principles",
+      "practice"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4",
+    "section_number": "4",
+    "title": "Management principles",
+    "parent": null,
+    "chunk_id": "BSI_4_4",
+    "content": "Complex and therefore expensive safeguards, largescale projects, and investments in technology are frequently very wrongly portrayed as being more effective and frequently are responsible for the poor reputation of security safeguards as a cost driver. In the following, we shall therefore present management principles which, when observed, form a good basis for successful information security management.",
+    "summary": "Information security management or abbreviated IS management is the term referring to the planning and supervisory functions that are required to assure the meaningful development, practical feasibility, and effectiveness of a well thought-through and systematic security process as well as all the security safeguards required for this. This also includes the processes of meeting and complying with statutory and regulatory requirements.",
+    "keywords": [
+      "management",
+      "security",
+      "safeguards",
+      "principles",
+      "practice"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4",
+    "section_number": "4",
+    "title": "Management principles",
+    "parent": null,
+    "chunk_id": "BSI_4_0",
+    "content": "Information Security Management Systems Version 1.0 should be used for exchanging experiences about successful security activities. Since the subject of information security is very broad, it is important to identify and document the sources of information and cooperation partners that are appropriate for the respective organisation and the framework conditions.",
+    "summary": "Information Security Management Systems Version 1.0 should be used for exchanging experiences about successful security activities. Since the subject of information security is very broad, it is important to identify and document the sources of information and cooperation partners that are appropriate for the respective organisation and the framework conditions.",
+    "keywords": [
+      "information",
+      "security",
+      "management",
+      "systems",
+      "version"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_0",
+    "content": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_1",
+    "content": "if a number of security incidents occur or there are significant changes to the framework conditions), corresponding audits and assessments must be performed between the regular dates. All results and decisions must be documented in a comprehensible manner [DOC].",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_2",
+    "content": "The following questions, among other things, should be addressed during the discussion: Have framework conditions changed resulting in the need to change the approach regarding information security? Are the security objectives still appropriate?",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_3",
+    "content": "Is the information security policy still up-to-date? In this, the focus of the performance review regarding the security process is not on auditing individual security safeguards or organisational regulations, but on assessing the situation as a whole.",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_4",
+    "content": "For example, the secure operation of an Internet portal might turn out to be too expensive for a small company. The management level could then, as an alternative, charge a service provider with the administration of the portal.",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_5",
+    "content": "In this situation, it is useful to examine how the security concept and the security organisation have performed to date. In chapter 8 Security concept, various activities are described for reviewing the performance of individual security safeguards.",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_6",
+    "content": "The results gathered there should be taken into account when reviewing the performance of the security strategy. If, for example, it turns out that the security safeguards are ineffective or decidedly expensive, this might give reason to reconsider and adapt the entire security strategy.",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_7",
+    "content": "The following questions should be addressed: Is the security strategy still appropriate? Is the security concept appropriate for achieving the set objectives?",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_8",
+    "content": "Are, for instance, the legal requirements fulfilled? Is the security organisation appropriate for achieving the objectives?",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_9",
+    "content": "Should its position within in the organisation be strengthened or should it be integrated more in the internal processes? Is there an appropriate relation between the effort i.e.",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-4.3",
+    "section_number": "4.3",
+    "title": "Performance review within the security process",
+    "parent": "4",
+    "chunk_id": "BSI_4.3_10",
+    "content": "costs, personnel, materials required to achieve the security objectives and the business objectives and the role of the organisation?",
+    "summary": "The management level must regularly check the performance and assess the security process (management assessment). If required (e.g.",
+    "keywords": [
+      "security",
+      "should",
+      "objectives",
+      "appropriate",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-5",
+    "section_number": "5",
+    "title": "Resources for information security",
+    "parent": null,
+    "chunk_id": "BSI_5_0",
+    "content": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "summary": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "keywords": [
+      "security",
+      "resources",
+      "objectives",
+      "always",
+      "sufficient"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-5",
+    "section_number": "5",
+    "title": "Resources for information security",
+    "parent": null,
+    "chunk_id": "BSI_5_1",
+    "content": "In order to fulfil the set objectives, it is important that an initial costbenefit estimation is performed already when the objectives are defined. In the course of the security process, this aspect should continue to play a decisive role so that, on the one hand, resources are not wasted, and, on the other, the investments necessary for achieving an appropriate level of security are guaranteed.",
+    "summary": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "keywords": [
+      "security",
+      "resources",
+      "objectives",
+      "always",
+      "sufficient"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-5",
+    "section_number": "5",
+    "title": "Resources for information security",
+    "parent": null,
+    "chunk_id": "BSI_5_2",
+    "content": "Frequently, only technical solutions are associated with IT security. However, this is too shortsighted.",
+    "summary": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "keywords": [
+      "security",
+      "resources",
+      "objectives",
+      "always",
+      "sufficient"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-5",
+    "section_number": "5",
+    "title": "Resources for information security",
+    "parent": null,
+    "chunk_id": "BSI_5_3",
+    "content": "This is another reason for better using the term information security instead of IT security. First and foremost, it is important to emphasise that investing in human resources is often more effective than investing in security technology.",
+    "summary": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "keywords": [
+      "security",
+      "resources",
+      "objectives",
+      "always",
+      "sufficient"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-5",
+    "section_number": "5",
+    "title": "Resources for information security",
+    "parent": null,
+    "chunk_id": "BSI_5_4",
+    "content": "Technology alone does not solve any problems; it must always be integrated in the organisational framework conditions. The examination of the effectiveness and appropriateness of security safeguards must also be ensured by providing sufficient resources.",
+    "summary": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "keywords": [
+      "security",
+      "resources",
+      "objectives",
+      "always",
+      "sufficient"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-5",
+    "section_number": "5",
+    "title": "Resources for information security",
+    "parent": null,
+    "chunk_id": "BSI_5_5",
+    "content": "In practice, the internal security experts frequently do not have enough time to analyse all the influencing factors and framework conditions that are relevant to security (e.g. statutory requirements or technical questions).",
+    "summary": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "keywords": [
+      "security",
+      "resources",
+      "objectives",
+      "always",
+      "sufficient"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-5",
+    "section_number": "5",
+    "title": "Resources for information security",
+    "parent": null,
+    "chunk_id": "BSI_5_6",
+    "content": "To some extent, they lack the relevant basic principles. It always makes sense to consult external experts if questions and issues cannot be clarified or solved using one s own means.",
+    "summary": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "keywords": [
+      "security",
+      "resources",
+      "objectives",
+      "always",
+      "sufficient"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-5",
+    "section_number": "5",
+    "title": "Resources for information security",
+    "parent": null,
+    "chunk_id": "BSI_5_7",
+    "content": "This must be documented by the internal security experts so that the management level provides the necessary resources. A prerequisite for secure IT operations is a company that functions well.",
+    "summary": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "keywords": [
+      "security",
+      "resources",
+      "objectives",
+      "always",
+      "sufficient"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-5",
+    "section_number": "5",
+    "title": "Resources for information security",
+    "parent": null,
+    "chunk_id": "BSI_5_8",
+    "content": "Sufficient resources must therefore be made available for operations. Typical problems encountered during IT operations (scarce resources, overburdened administrators, or an unstructured and poorly maintained IT environment) must generally be solved so that the actual security safeguards can be implemented effectively and efficiently.",
+    "summary": "Maintaining a particular level of security always requires financial, personnel, and time-related resources that must be made available in sufficient quantities by the management level. If set objectives cannot be achieved due to a lack of resources, it is not the fault of the persons responsible for the implementation, but rather the fault of the superiors who have set unrealistic objectives or have not provided the necessary resources.",
+    "keywords": [
+      "security",
+      "resources",
+      "objectives",
+      "always",
+      "sufficient"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-6",
+    "section_number": "6",
+    "title": "Involving employees in the security process",
+    "parent": null,
+    "chunk_id": "BSI_6_0",
+    "content": "Information security affects all employees without any exceptions. By acting responsibly and with quality awareness, every individual can avoid damages and contribute to success.",
+    "summary": "Information security affects all employees without any exceptions. By acting responsibly and with quality awareness, every individual can avoid damages and contribute to success.",
+    "keywords": [
+      "security",
+      "employees",
+      "information",
+      "safeguards",
+      "awareness"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-6",
+    "section_number": "6",
+    "title": "Involving employees in the security process",
+    "parent": null,
+    "chunk_id": "BSI_6_1",
+    "content": "Raising the awareness for information security and providing appropriate training measures for employees as well as for all managers therefore are fundamental prerequisites for information security. In order to be able to implement security safeguards as planned, employees must have the necessary basic skills to do so.",
+    "summary": "Information security affects all employees without any exceptions. By acting responsibly and with quality awareness, every individual can avoid damages and contribute to success.",
+    "keywords": [
+      "security",
+      "employees",
+      "information",
+      "safeguards",
+      "awareness"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-6",
+    "section_number": "6",
+    "title": "Involving employees in the security process",
+    "parent": null,
+    "chunk_id": "BSI_6_2",
+    "content": "In addition to knowledge about how security mechanisms must be operated, this also involves knowledge of the purpose of security safeguards. The working atmosphere, common moral values, and the commitment of employees are all factors decisively influencing information security.",
+    "summary": "Information security affects all employees without any exceptions. By acting responsibly and with quality awareness, every individual can avoid damages and contribute to success.",
+    "keywords": [
+      "security",
+      "employees",
+      "information",
+      "safeguards",
+      "awareness"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-6",
+    "section_number": "6",
+    "title": "Involving employees in the security process",
+    "parent": null,
+    "chunk_id": "BSI_6_3",
+    "content": "If new employees are employed or existing ones are given new tasks they must be provided with thorough training so they adjust to the new situation. This must also involve teaching them about the security-related aspects of the respective job.",
+    "summary": "Information security affects all employees without any exceptions. By acting responsibly and with quality awareness, every individual can avoid damages and contribute to success.",
+    "keywords": [
+      "security",
+      "employees",
+      "information",
+      "safeguards",
+      "awareness"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-6",
+    "section_number": "6",
+    "title": "Involving employees in the security process",
+    "parent": null,
+    "chunk_id": "BSI_6_4",
+    "content": "If employees leave the organisation or their responsibilities change, this process must be accompanied by appropriate security safeguards (e.g. withdrawal of authorisation, returning keys and identity cards).",
+    "summary": "Information security affects all employees without any exceptions. By acting responsibly and with quality awareness, every individual can avoid damages and contribute to success.",
+    "keywords": [
+      "security",
+      "employees",
+      "information",
+      "safeguards",
+      "awareness"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-6",
+    "section_number": "6",
+    "title": "Involving employees in the security process",
+    "parent": null,
+    "chunk_id": "BSI_6_5",
+    "content": "Employees must be obliged to comply with all laws, regulations, and ordinances relevant in the respective environment. For this, they must, of course, be familiarised with the existing information security regulations and simultaneously they must be motivated to comply with these.",
+    "summary": "Information security affects all employees without any exceptions. By acting responsibly and with quality awareness, every individual can avoid damages and contribute to success.",
+    "keywords": [
+      "security",
+      "employees",
+      "information",
+      "safeguards",
+      "awareness"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-6",
+    "section_number": "6",
+    "title": "Involving employees in the security process",
+    "parent": null,
+    "chunk_id": "BSI_6_6",
+    "content": "Moreover, the employees should know that every identified (or suspected) security incident must be reported to security management and how and to whom the report has to be performed.",
+    "summary": "Information security affects all employees without any exceptions. By acting responsibly and with quality awareness, every individual can avoid damages and contribute to success.",
+    "keywords": [
+      "security",
+      "employees",
+      "information",
+      "safeguards",
+      "awareness"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7",
+    "section_number": "7",
+    "title": "The security process",
+    "parent": null,
+    "chunk_id": "BSI_7_0",
+    "content": "The management level must define the security objectives knowing all of the relevant framework conditions, the environmental analysis, and based on the business objectives of the company or the role of the government agency and must create the prerequisites for their implementation. The approach is planned with a security strategy to establish a continuous security process.",
+    "summary": "The management level must define the security objectives knowing all of the relevant framework conditions, the environmental analysis, and based on the business objectives of the company or the role of the government agency and must create the prerequisites for their implementation. The approach is planned with a security strategy to establish a continuous security process.",
+    "keywords": [
+      "security",
+      "relevant",
+      "management",
+      "objectives",
+      "strategy"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7",
+    "section_number": "7",
+    "title": "The security process",
+    "parent": null,
+    "chunk_id": "BSI_7_1",
+    "content": "The strategy is implemented with the help of a security concept and a security organisation. In the following, we shall therefore describe the relevant management activities for each lifecycle phase.",
+    "summary": "The management level must define the security objectives knowing all of the relevant framework conditions, the environmental analysis, and based on the business objectives of the company or the role of the government agency and must create the prerequisites for their implementation. The approach is planned with a security strategy to establish a continuous security process.",
+    "keywords": [
+      "security",
+      "relevant",
+      "management",
+      "objectives",
+      "strategy"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7",
+    "section_number": "7",
+    "title": "The security process",
+    "parent": null,
+    "chunk_id": "BSI_7_2",
+    "content": "Due to the broad range and the better overview, the activities relevant to the security concept will be described in a separate chapter.",
+    "summary": "The management level must define the security objectives knowing all of the relevant framework conditions, the environmental analysis, and based on the business objectives of the company or the role of the government agency and must create the prerequisites for their implementation. The approach is planned with a security strategy to establish a continuous security process.",
+    "keywords": [
+      "security",
+      "relevant",
+      "management",
+      "objectives",
+      "strategy"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "shall"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.1",
+    "section_number": "7.1",
+    "title": "Planning of the security process",
+    "parent": "7",
+    "chunk_id": "BSI_7.1_0",
+    "content": "Determining the framework conditions The creation of information security is not an end in itself, but information security contributes to the objectives of an organisation being achieved and being able to reliably execute business processes and tasks. For this, it is required that the organisation identifies and analyses all framework conditions, defines the security objectives, and draws up a security strategy containing basic statements on how the set objectives should be achieved.",
+    "summary": "Determining the framework conditions The creation of information security is not an end in itself, but information security contributes to the objectives of an organisation being achieved and being able to reliably execute business processes and tasks. For this, it is required that the organisation identifies and analyses all framework conditions, defines the security objectives, and draws up a security strategy containing basic statements on how the set objectives should be achieved.",
+    "keywords": [
+      "security",
+      "objectives",
+      "information",
+      "framework",
+      "conditions"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.1",
+    "section_number": "7.1",
+    "title": "Planning of the security process",
+    "parent": "7",
+    "chunk_id": "BSI_7.1_1",
+    "content": "Identifying the framework conditions also includes the analysis of the environment, within the framework of which both internal and external parties, as well as their security requirements, their requirements regarding the ISMS, and their statutory and regulatory requirements are taken into account. Determining framework conditions is an essential basis for the further considerations regarding information security, since it can be identified where important background information is missing in order to be able to properly assess the importance of information security for the organisation.",
+    "summary": "Determining the framework conditions The creation of information security is not an end in itself, but information security contributes to the objectives of an organisation being achieved and being able to reliably execute business processes and tasks. For this, it is required that the organisation identifies and analyses all framework conditions, defines the security objectives, and draws up a security strategy containing basic statements on how the set objectives should be achieved.",
+    "keywords": [
+      "security",
+      "objectives",
+      "information",
+      "framework",
+      "conditions"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.1",
+    "section_number": "7.1",
+    "title": "Planning of the security process",
+    "parent": "7",
+    "chunk_id": "BSI_7.1_2",
+    "content": "Furthermore, a first self-assessment is allowed for thereby, since it becomes clear already when compiling the background information where there are potential conflicts and where actions need to be taken. Formulating security objectives and an information security policy [DOC] The information security objectives should be determined carefully at the beginning of each security process.",
+    "summary": "Determining the framework conditions The creation of information security is not an end in itself, but information security contributes to the objectives of an organisation being achieved and being able to reliably execute business processes and tasks. For this, it is required that the organisation identifies and analyses all framework conditions, defines the security objectives, and draws up a security strategy containing basic statements on how the set objectives should be achieved.",
+    "keywords": [
+      "security",
+      "objectives",
+      "information",
+      "framework",
+      "conditions"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.1",
+    "section_number": "7.1",
+    "title": "Planning of the security process",
+    "parent": "7",
+    "chunk_id": "BSI_7.1_3",
+    "content": "Otherwise, there is a risk that the security strategies and concepts drawn out will not match the actual requirements of the organisation. Thus, the basic objectives of the organisation and the general framework conditions should be used to initially derive general security objectives and make strategic specifications as to how these security objectives should be achieved.",
+    "summary": "Determining the framework conditions The creation of information security is not an end in itself, but information security contributes to the objectives of an organisation being achieved and being able to reliably execute business processes and tasks. For this, it is required that the organisation identifies and analyses all framework conditions, defines the security objectives, and draws up a security strategy containing basic statements on how the set objectives should be achieved.",
+    "keywords": [
+      "security",
+      "objectives",
+      "information",
+      "framework",
+      "conditions"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.1",
+    "section_number": "7.1",
+    "title": "Planning of the security process",
+    "parent": "7",
+    "chunk_id": "BSI_7.1_4",
+    "content": "The following subjects should at least be considered when developing the security strategy: objectives of the company or roles of the government agency legal requirements and regulations such as regarding data privacy, customer requirements and existing contracts, internal framework conditions (e.g. pan-organisation risk management), analysis of the environment, (IT-assisted) business processes and specialised tasks, and global basic threats to the business activities through security risks (e.g.",
+    "summary": "Determining the framework conditions The creation of information security is not an end in itself, but information security contributes to the objectives of an organisation being achieved and being able to reliably execute business processes and tasks. For this, it is required that the organisation identifies and analyses all framework conditions, defines the security objectives, and draws up a security strategy containing basic statements on how the set objectives should be achieved.",
+    "keywords": [
+      "security",
+      "objectives",
+      "information",
+      "framework",
+      "conditions"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.1",
+    "section_number": "7.1",
+    "title": "Planning of the security process",
+    "parent": "7",
+    "chunk_id": "BSI_7.1_5",
+    "content": "damage to the image, violations of laws, infringement of contractual obligations, and theft of research results).",
+    "summary": "Determining the framework conditions The creation of information security is not an end in itself, but information security contributes to the objectives of an organisation being achieved and being able to reliably execute business processes and tasks. For this, it is required that the organisation identifies and analyses all framework conditions, defines the security objectives, and draws up a security strategy containing basic statements on how the set objectives should be achieved.",
+    "keywords": [
+      "security",
+      "objectives",
+      "information",
+      "framework",
+      "conditions"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7",
+    "section_number": "7",
+    "title": "The security process",
+    "parent": null,
+    "chunk_id": "BSI_7_0",
+    "content": "Information Security Management Systems Version 1.0 scheduling the resources for supporting information security must be performed such that the agreed level of security can actually be achieved. When defining roles within the framework of information management, the following basic rules must be observed: 1.",
+    "summary": "Information Security Management Systems Version 1.0 scheduling the resources for supporting information security must be performed such that the agreed level of security can actually be achieved. When defining roles within the framework of information management, the following basic rules must be observed: 1.",
+    "keywords": [
+      "information",
+      "security",
+      "management",
+      "responsible",
+      "should"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7",
+    "section_number": "7",
+    "title": "The security process",
+    "parent": null,
+    "chunk_id": "BSI_7_1",
+    "content": "At least one person has to be appointed who promotes and coordinates the information security process, typically as information security officer (ISO). 3.",
+    "summary": "Information Security Management Systems Version 1.0 scheduling the resources for supporting information security must be performed such that the agreed level of security can actually be achieved. When defining roles within the framework of information management, the following basic rules must be observed: 1.",
+    "keywords": [
+      "information",
+      "security",
+      "management",
+      "responsible",
+      "should"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7",
+    "section_number": "7",
+    "title": "The security process",
+    "parent": null,
+    "chunk_id": "BSI_7_2",
+    "content": "Every employee is equally responsible for their original task and for maintaining information security at his/her workplace and in his/her environment. In order to secure direct access to the organisation s management, the role of the ISO should be organised as an executive department.",
+    "summary": "Information Security Management Systems Version 1.0 scheduling the resources for supporting information security must be performed such that the agreed level of security can actually be achieved. When defining roles within the framework of information management, the following basic rules must be observed: 1.",
+    "keywords": [
+      "information",
+      "security",
+      "management",
+      "responsible",
+      "should"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7",
+    "section_number": "7",
+    "title": "The security process",
+    "parent": null,
+    "chunk_id": "BSI_7_3",
+    "content": "At management level, the information security role should be clearly assigned to one responsible manager whom the ISO directly reports to.",
+    "summary": "Information Security Management Systems Version 1.0 scheduling the resources for supporting information security must be performed such that the agreed level of security can actually be achieved. When defining roles within the framework of information management, the following basic rules must be observed: 1.",
+    "keywords": [
+      "information",
+      "security",
+      "management",
+      "responsible",
+      "should"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.4",
+    "section_number": "7.4",
+    "title": "Maintaining information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.4_0",
+    "content": "Establishing information security is not a project with a limited time span, but a continuous process. The appropriateness and effectiveness of all elements of the information security management system must be checked at regular intervals.",
+    "summary": "Establishing information security is not a project with a limited time span, but a continuous process. The appropriateness and effectiveness of all elements of the information security management system must be checked at regular intervals.",
+    "keywords": [
+      "security",
+      "information",
+      "management",
+      "become",
+      "audits"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.4",
+    "section_number": "7.4",
+    "title": "Maintaining information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.4_1",
+    "content": "This means that not only individual security safeguards must be checked, but also that the security strategy must be reviewed on a regular basis. The implementation of the security safeguards should be evaluated at regular intervals by means of internal audits.",
+    "summary": "Establishing information security is not a project with a limited time span, but a continuous process. The appropriateness and effectiveness of all elements of the information security management system must be checked at regular intervals.",
+    "keywords": [
+      "security",
+      "information",
+      "management",
+      "become",
+      "audits"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.4",
+    "section_number": "7.4",
+    "title": "Maintaining information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.4_2",
+    "content": "These also serve the purpose of collecting and evaluating the experiences made in dayto-day practice. In addition to audits, it is also necessary to perform drills and awareness-raising measures, since this is the only manner of determining whether all the specified procedures and the conduct in cases of emergency will actually have the desired effect.",
+    "summary": "Establishing information security is not a project with a limited time span, but a continuous process. The appropriateness and effectiveness of all elements of the information security management system must be checked at regular intervals.",
+    "keywords": [
+      "security",
+      "information",
+      "management",
+      "become",
+      "audits"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.4",
+    "section_number": "7.4",
+    "title": "Maintaining information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.4_3",
+    "content": "Findings regarding vulnerabilities and opportunities for improvements must lead to consequences within the security organisation without any exception. Moreover, it is important that future developments both regarding the technology used and the business processes and organisational structures are perceived at an early stage so that potential threats can be identified in time, provisions can be made and security safeguards can be implemented.",
+    "summary": "Establishing information security is not a project with a limited time span, but a continuous process. The appropriateness and effectiveness of all elements of the information security management system must be checked at regular intervals.",
+    "keywords": [
+      "security",
+      "information",
+      "management",
+      "become",
+      "audits"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.4",
+    "section_number": "7.4",
+    "title": "Maintaining information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.4_4",
+    "content": "If significant changes in business processes or organisational structures are looming, the information security management must become involved here. The ISO must become active in a proactive manner: Even if the involvement of the information security management is already planned for in the organisation s regulations, it should not wait to become involved as planned, but should become involved in the relevant processes of its own accord in good time.",
+    "summary": "Establishing information security is not a project with a limited time span, but a continuous process. The appropriateness and effectiveness of all elements of the information security management system must be checked at regular intervals.",
+    "keywords": [
+      "security",
+      "information",
+      "management",
+      "become",
+      "audits"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.4",
+    "section_number": "7.4",
+    "title": "Maintaining information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.4_5",
+    "content": "It is important that none of the audits are carried out by those individuals who were involved in the planning and design of the security objectives, because it is difficult to find one s own mistakes. Depending on the size of the organisation it might be useful to consult external auditors to avoid the situation in which employees become blinkered to their own work.",
+    "summary": "Establishing information security is not a project with a limited time span, but a continuous process. The appropriateness and effectiveness of all elements of the information security management system must be checked at regular intervals.",
+    "keywords": [
+      "security",
+      "information",
+      "management",
+      "become",
+      "audits"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.4",
+    "section_number": "7.4",
+    "title": "Maintaining information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.4_6",
+    "content": "The maintenance of information security is also an important point for small and medium-sized organisations. Although the audits will be less extensive than in large organisations, they must not be omitted in any case.",
+    "summary": "Establishing information security is not a project with a limited time span, but a continuous process. The appropriateness and effectiveness of all elements of the information security management system must be checked at regular intervals.",
+    "keywords": [
+      "security",
+      "information",
+      "management",
+      "become",
+      "audits"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.4",
+    "section_number": "7.4",
+    "title": "Maintaining information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.4_7",
+    "content": "Within the context of the annual management assessment, the topmost management level must also check whether there are new legal stipulations that must be taken into consideration or whether other framework conditions have changed.",
+    "summary": "Establishing information security is not a project with a limited time span, but a continuous process. The appropriateness and effectiveness of all elements of the information security management system must be checked at regular intervals.",
+    "keywords": [
+      "security",
+      "information",
+      "management",
+      "become",
+      "audits"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.5",
+    "section_number": "7.5",
+    "title": "Continuous improvement of information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.5_0",
+    "content": "Ultimately, the review of the security process is intended to improve the process. The results should therefore be used to assess the effectiveness and efficiency of the selected security strategy and, if necessary, to adapt it.",
+    "summary": "Ultimately, the review of the security process is intended to improve the process. The results should therefore be used to assess the effectiveness and efficiency of the selected security strategy and, if necessary, to adapt it.",
+    "keywords": [
+      "security",
+      "process",
+      "strategy",
+      "ultimately",
+      "review"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-7.5",
+    "section_number": "7.5",
+    "title": "Continuous improvement of information security",
+    "parent": "7",
+    "chunk_id": "BSI_7.5_1",
+    "content": "The security strategy must also be reviewed in the case of changes to the security objectives or framework conditions.",
+    "summary": "Ultimately, the review of the security process is intended to improve the process. The results should therefore be used to assess the effectiveness and efficiency of the selected security strategy and, if necessary, to adapt it.",
+    "keywords": [
+      "security",
+      "process",
+      "strategy",
+      "ultimately",
+      "review"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_0",
+    "content": "Information Security Management Systems Version 1.0 Figure 6: Overview of the lifecycle of a security concept Classifying risks and damages [DOC] Depending on the selected method for risk analysis, the information security management must define how basic threats, potentials for causing damage, probabilities of occurrence, and the risks resulting thereof should be classified and assessed. However, it is difficult, complex, and moreover prone to error to determine individual values for damages and probabilities of occurrence.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 6: Overview of the lifecycle of a security concept Classifying risks and damages [DOC] Depending on the selected method for risk analysis, the information security management must define how basic threats, potentials for causing damage, probabilities of occurrence, and the risks resulting thereof should be classified and assessed. However, it is difficult, complex, and moreover prone to error to determine individual values for damages and probabilities of occurrence.",
+    "keywords": [
+      "occurrence",
+      "information",
+      "damages",
+      "security",
+      "analysis"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_1",
+    "content": "It is not advisable to invest too much time in the process of precisely determining probabilities of occurrence and possible damages. In most cases, it is more practical to work with qualitative categories both for the probability of occurrence and for the potential extent of damages.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 6: Overview of the lifecycle of a security concept Classifying risks and damages [DOC] Depending on the selected method for risk analysis, the information security management must define how basic threats, potentials for causing damage, probabilities of occurrence, and the risks resulting thereof should be classified and assessed. However, it is difficult, complex, and moreover prone to error to determine individual values for damages and probabilities of occurrence.",
+    "keywords": [
+      "occurrence",
+      "information",
+      "damages",
+      "security",
+      "analysis"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_2",
+    "content": "Per dimension, a maximum of five categories should be selected, e.g. Probability of occurrence: rarely, medium, frequently, very frequently Potential extent of damage: Negligible, Limited, Considerable, Threatening the existence of the organisation Once these kinds of categories have been suitably defined in the organisation, they can be used as a basis for qualitative risk examination.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 6: Overview of the lifecycle of a security concept Classifying risks and damages [DOC] Depending on the selected method for risk analysis, the information security management must define how basic threats, potentials for causing damage, probabilities of occurrence, and the risks resulting thereof should be classified and assessed. However, it is difficult, complex, and moreover prone to error to determine individual values for damages and probabilities of occurrence.",
+    "keywords": [
+      "occurrence",
+      "information",
+      "damages",
+      "security",
+      "analysis"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_3",
+    "content": "Risk analysis [DOC] Every risk analysis must comprise the following steps: The information and business processes that are to be protected must be identified. All the relevant basic threats pertaining to the information and business processes to be protected must be identified.",
+    "summary": "Information Security Management Systems Version 1.0 Figure 6: Overview of the lifecycle of a security concept Classifying risks and damages [DOC] Depending on the selected method for risk analysis, the information security management must define how basic threats, potentials for causing damage, probabilities of occurrence, and the risks resulting thereof should be classified and assessed. However, it is difficult, complex, and moreover prone to error to determine individual values for damages and probabilities of occurrence.",
+    "keywords": [
+      "occurrence",
+      "information",
+      "damages",
+      "security",
+      "analysis"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_0",
+    "content": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_1",
+    "content": "The risk of suffering damages due to security incidents must be assessed. The terms basic threat , vulnerability and risk are defined in the glossary.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_2",
+    "content": "Developing a strategy for dealing with risks [DOC] The topmost management level must specify how the identified risks should be dealt with. Depending on the risk appetite of an organisation, different risk acceptance criteria are possible in each case.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_3",
+    "content": "Risk appetite refers to an organisation s tendency regarding the assessment and dealing with risks, with this tendency resulting from cultural, internal, external, or economic influences. The risks identified must be processed accordingly by the information security management.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_4",
+    "content": "The following options are available for this: risks can be avoided, for example, by excluding the cause of the risk, be reduced by modifying the framework conditions which contributed to the classification of risks, be transferred by sharing the risks with other parties, e.g. by outsourcing or through insurances, be accepted (based on a comprehensible state of facts), for example, because the opportunities related to the risk are to be seized.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_5",
+    "content": "The manner in which risks should be dealt with must be documented, assigned to a risk owner, and approved by the topmost management level. The resources necessary for implementing the strategy must be planned and made available.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_6",
+    "content": "When developing the strategy, the residual risk is an important decision criterion, in addition to the costs, that must be considered by the management level. In practice, the risk assessment and risk handling steps are performed until the risk acceptance criteria of the organisation have been fulfilled and the remaining risk ( residual risk ) is thus in accordance with the organisation s objectives and specifications.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_7",
+    "content": "The residual risk must then be submitted to the management level for approval ( risk acceptance ). This documents in a traceable manner that the organisation is aware of the residual risk.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_8",
+    "content": "Within the framework of the risk assessment, mostly risks result exceeding the risk acceptance limit (see BSI standard 200-3) and therefore requiring handling. In the following, the risk handling option Reduction through the implementation of security safeguards is considered.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_9",
+    "content": "Selecting security safeguards [DOC] Specific security safeguards can be derived from the general security objectives and security requirements specified by the management level. When selecting security safeguards, the cost-benefit aspects and practical feasibility must also be considered besides the effects on the level of security.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8",
+    "section_number": "8",
+    "title": "Security concept",
+    "parent": null,
+    "chunk_id": "BSI_8_10",
+    "content": "Besides technical security safeguards, organisational procedures and processes (such as user guidelines, the granting of rights, security training measures, as well as testing and approval procedures) must also be established. When doing so, the following issues, among other things, must be addressed: organisation (including specifying responsibilities, assigning duties and separating functions, regulating how information is handled, applications and IT components, hardware and software management, change management, etc.), personnel (e.g.",
+    "summary": "Information Security Management Systems Version 1.0 The possible damages due to a loss of confidentiality, integrity, or availability must be identified and assessed. The assumable repercussions on the business activities or fulfilment of tasks through security incidents must be analysed.",
+    "keywords": [
+      "security",
+      "management",
+      "organisation",
+      "safeguards",
+      "acceptance"
+    ],
+    "lifecycle_phase": "Plan",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8.2",
+    "section_number": "8.2",
+    "title": "Implementation of the security concept",
+    "parent": "8",
+    "chunk_id": "BSI_8.2_0",
+    "content": "Once the security safeguards have been selected they must be implemented according to an implementation plan. The following steps should be followed during implementation: Development of an implementation plan for the security concept [DOC] An implementation plan must include the following subjects: specification of priorities (implementation sequence), specification of responsibilities for initiation, provision of resources by the management, and implementation planning of individual safeguards (definition of dates and costs, definition of persons in charge of implementation, as well as persons in charge of supervising the implementation and the efficiency of safeguards).",
+    "summary": "Once the security safeguards have been selected they must be implemented according to an implementation plan. The following steps should be followed during implementation: Development of an implementation plan for the security concept [DOC] An implementation plan must include the following subjects: specification of priorities (implementation sequence), specification of responsibilities for initiation, provision of resources by the management, and implementation planning of individual safeguards (definition of dates and costs, definition of persons in charge of implementation, as well as persons in charge of supervising the implementation and the efficiency of safeguards).",
+    "keywords": [
+      "implementation",
+      "security",
+      "safeguards",
+      "implemented",
+      "following"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8.2",
+    "section_number": "8.2",
+    "title": "Implementation of the security concept",
+    "parent": "8",
+    "chunk_id": "BSI_8.2_1",
+    "content": "Implementation of the security safeguards The planned security safeguards must be implemented in accordance with the implementation plan. In this, information security must be integrated in the pan-organisation procedures and processes.",
+    "summary": "Once the security safeguards have been selected they must be implemented according to an implementation plan. The following steps should be followed during implementation: Development of an implementation plan for the security concept [DOC] An implementation plan must include the following subjects: specification of priorities (implementation sequence), specification of responsibilities for initiation, provision of resources by the management, and implementation planning of individual safeguards (definition of dates and costs, definition of persons in charge of implementation, as well as persons in charge of supervising the implementation and the efficiency of safeguards).",
+    "keywords": [
+      "implementation",
+      "security",
+      "safeguards",
+      "implemented",
+      "following"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8.2",
+    "section_number": "8.2",
+    "title": "Implementation of the security concept",
+    "parent": "8",
+    "chunk_id": "BSI_8.2_2",
+    "content": "If difficulties arise during implementation, they should be communicated immediately so that solutions can be devised to overcome them. Typical solutions include, for example, modifying the lines of communication or the allocation of rights or adapting technical procedures.",
+    "summary": "Once the security safeguards have been selected they must be implemented according to an implementation plan. The following steps should be followed during implementation: Development of an implementation plan for the security concept [DOC] An implementation plan must include the following subjects: specification of priorities (implementation sequence), specification of responsibilities for initiation, provision of resources by the management, and implementation planning of individual safeguards (definition of dates and costs, definition of persons in charge of implementation, as well as persons in charge of supervising the implementation and the efficiency of safeguards).",
+    "keywords": [
+      "implementation",
+      "security",
+      "safeguards",
+      "implemented",
+      "following"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8.2",
+    "section_number": "8.2",
+    "title": "Implementation of the security concept",
+    "parent": "8",
+    "chunk_id": "BSI_8.2_3",
+    "content": "Supervising and checking the implementation [DOC] Regular checks must be performed to ensure that the set objectives are complied with. If objectives cannot be complied with, the member of the management level responsible for information security must be informed so that problems can be responded to in due time.",
+    "summary": "Once the security safeguards have been selected they must be implemented according to an implementation plan. The following steps should be followed during implementation: Development of an implementation plan for the security concept [DOC] An implementation plan must include the following subjects: specification of priorities (implementation sequence), specification of responsibilities for initiation, provision of resources by the management, and implementation planning of individual safeguards (definition of dates and costs, definition of persons in charge of implementation, as well as persons in charge of supervising the implementation and the efficiency of safeguards).",
+    "keywords": [
+      "implementation",
+      "security",
+      "safeguards",
+      "implemented",
+      "following"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8.4",
+    "section_number": "8.4",
+    "title": "Continuous improvement of the security concept",
+    "parent": "8",
+    "chunk_id": "BSI_8.4_0",
+    "content": "Regularly reviewing the performance of the security concept serves for remedying errors and vulnerabilities identified and for optimising security safeguards with regard to their efficiency. One important item involves improving the practical feasibility of technical safeguards and organisational procedures so as to increase the acceptance of the security safeguards.",
+    "summary": "Regularly reviewing the performance of the security concept serves for remedying errors and vulnerabilities identified and for optimising security safeguards with regard to their efficiency. One important item involves improving the practical feasibility of technical safeguards and organisational procedures so as to increase the acceptance of the security safeguards.",
+    "keywords": [
+      "security",
+      "safeguards",
+      "regularly",
+      "reviewing",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  },
+  {
+    "source_standard": "BSI",
+    "source_id": "BSI-8.4",
+    "section_number": "8.4",
+    "title": "Continuous improvement of the security concept",
+    "parent": "8",
+    "chunk_id": "BSI_8.4_1",
+    "content": "Likewise, the formulation of suitable security safeguards should time and again be considered as to whether it is easily comprehensible and understandable.",
+    "summary": "Regularly reviewing the performance of the security concept serves for remedying errors and vulnerabilities identified and for optimising security safeguards with regard to their efficiency. One important item involves improving the practical feasibility of technical safeguards and organisational procedures so as to increase the acceptance of the security safeguards.",
+    "keywords": [
+      "security",
+      "safeguards",
+      "regularly",
+      "reviewing",
+      "performance"
+    ],
+    "lifecycle_phase": "Do",
+    "normative": true,
+    "normative_type": "should"
+  }
+]

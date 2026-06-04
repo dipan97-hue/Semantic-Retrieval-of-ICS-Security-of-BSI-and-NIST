@@ -1,0 +1,13 @@
+scikit-learn
+pymupdf
+nltk
+sentence-transformers
+pandas
+requests
+streamlit
+dotenv
+openai
+sentence-transformers
+google-generativeai
+torchvision
+anthropic

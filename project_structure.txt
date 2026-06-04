@@ -1,0 +1,76 @@
+Thesis/
+│
+├── app.py
+│
+├── config/
+│   ├── __init__.py
+│   └── config.py
+│
+├── etl/
+│   ├── __init__.py
+│   ├── bsi_extract.py
+│   ├── nist_extract.py
+│   ├── cleaning.py
+│   ├── chunking.py
+│   ├── lifecycle_bsi.py
+│   ├── lifecycle_nist.py
+│   ├── normative.py
+│   ├── keywords.py
+│   ├── summary.py
+│   ├── common.py
+│   ├── combined_dataset.py
+│   └── save_json.py
+│
+├── embeddings/
+│   ├── __init__.py
+│   ├── embeddings.py
+│   └── requirement_mapping.py
+│
+├── retrieval/
+│   ├── __init__.py
+│   ├── retrieve.py
+│   ├── mappings.py
+│   ├── query_expansion.py
+│   └── context_builder.py
+│
+├── rag/
+│   ├── __init__.py
+│   ├── rag_pipeline.py
+│   
+│
+├── llm/
+│   ├── __init__.py
+│   ├── gpt_llm.py
+│   ├── mistral_llm.py
+│   ├── gemini_llm.py
+│   └── llm_router.py
+|
+├── prompt/
+|    └── prompt_builder.py
+|    
+├── storage/
+│   ├── __init__.py
+│   ├── supabase_bsi.py
+│   ├── supabase_nist.py
+│   ├── supabase_combined.py
+│   └── supabase_mapping.py
+│
+├── Runs/
+│   ├── __init__.py
+│   ├── run_etl.py
+│   ├── run_db.py
+│   └── run_rag.py
+│
+├── Json Files/
+│   ├── bsi_standard.json
+│   ├── nist_sp_800.json
+│   ├── combined_dataset.json
+│   
+│
+├── evaluation/
+│   |
+│   ├── retrieval_metrics.py
+│   ├── mapping_metrics.py
+│   └── generation_metrics.py
+│
+└── requirements.txt
