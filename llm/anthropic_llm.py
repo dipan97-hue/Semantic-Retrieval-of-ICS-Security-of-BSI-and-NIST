@@ -5,7 +5,7 @@ from config.config import ANTHROPIC_API_KEY
 client = Anthropic(api_key = ANTHROPIC_API_KEY)
 
 def claude(prompt):
-    model_name = "claude-sonnet-4-6"
+    model_name = "claude-haiku-4-5-20251001"
     response = client.messages.create(
         model=model_name,
         max_tokens=1024,

@@ -1,23 +1,36 @@
-import requests
+from mistralai import Mistral
 
-OLLAMA_URL = (
-    "http://localhost:11434/api/generate"
-)
+from config.config import MISTRAL_API_KEY
+
+client = Mistral(api_key= MISTRAL_API_KEY)
+
+MODEL_NAME = "mistral-small-latest"
 
 def generate_mistral(prompt):
 
-    response = requests.post(
+    try:
 
-        OLLAMA_URL,
+        response = client.chat.complete(model=MODEL_NAME, messages=[{"role":"system",
+                                                                     "content":"You are an OT cybersecurity expert."
 
-        json={
+                },
 
-            "model": "mistral",
+                {
 
-            "prompt": prompt,
+                    "role":"user",
 
-            "stream": False
-        }
-    )
+                    "content":prompt
 
-    return response.json()["response"]
+                }
+
+            ]
+
+        )
+
+        return response.choices[0].message.content
+
+    except Exception as e:
+
+        print("MISTRAL ERROR:",e)
+
+        return "Mistral generation failed."

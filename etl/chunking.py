@@ -1,13 +1,21 @@
 import re
-def split_into_chunks(text, max_sentences=2):
-    sentences = re.split(r'(?<=[.!?]) +', text)
+
+def split_into_chunks( text, chunk_size=350,overlap=75):
+
+    words = text.split()
 
     chunks = []
-    for i in range(0, len(sentences), max_sentences):
-        chunk = " ".join(sentences[i:i + max_sentences]).strip()
 
-        if len(chunk) > 100:
-            chunks.append(chunk)
+    start = 0
+
+    while start < len(words):
+
+        end = start + chunk_size
+
+        chunk = " ".join( words[start:end])
+
+        chunks.append(chunk)
+
+        start += chunk_size - overlap
 
     return chunks
-

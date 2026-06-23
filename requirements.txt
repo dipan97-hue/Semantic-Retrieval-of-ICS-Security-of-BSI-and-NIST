@@ -11,3 +11,5 @@ sentence-transformers
 google-generativeai
 torchvision
 anthropic
+mistralai
+pandas

@@ -89,15 +89,15 @@ def rag(query, model_name, k=10):
             "context": "",
             "evaluation_output": ""
         }
-
+    print("1. Query received")
     query_embedding = emb_query(query)
-
+    print("2. Embedding done")
     results = retrieve(
         query_embedding,
         k
     )
 
-    print("RETRIEVAL RESULTS:")
+    print("3. RETRIEVAL RESULTS:")
     print(results)
 
     if not isinstance(results, list) or len(results) == 0:
@@ -147,12 +147,12 @@ Please ask questions related to:
         query,
         clean_results
     )
-
+    print("4. Context and prompt built")
     answer = generate_llm_answer(
         model_name,
         prompt
     )
-
+    print("5. Answer generated")
     evaluation_output = evaluate_response(
         query=query,
         context=context,

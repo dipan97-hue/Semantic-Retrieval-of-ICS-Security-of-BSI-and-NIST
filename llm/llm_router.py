@@ -18,10 +18,8 @@ def generate_answer(model_name, prompt):
     if model_name == 'gpt-5.4-nano':
         return generate_gpt_5(prompt)
 
-    if model_name == 'claude-sonnet-4.6':
+    if model_name == 'claude-haiku-4-5':
         return claude(prompt)
 
-
-    
     else:
         return "Invalid Model"

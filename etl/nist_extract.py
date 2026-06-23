@@ -1,4 +1,3 @@
-# etl/nist_extractor.py
 
 import fitz
 import re
