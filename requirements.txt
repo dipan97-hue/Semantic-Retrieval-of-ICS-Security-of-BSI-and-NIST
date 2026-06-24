@@ -11,5 +11,5 @@ sentence-transformers
 google-generativeai
 torchvision
 anthropic
-mistralai
+mistralai==1.9.3
 pandas
