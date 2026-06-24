@@ -6,12 +6,12 @@ import streamlit as st
 try:
     if st.runtime.exists():
 
-        supabase_url = st.secrets["supabase_url"]
-        supabase_key = st.secrets["supabase_key"]
-        gemini_api_key = st.secrets["gemini_api_key"]
-        openai_api_key = st.secrets["openai_api_key"]
-        anthropic_api_key = st.secrets["anthropic_api_key"]
-        mistral_api_key = st.secrets["mistral_api_key"]
+        supabase_url = st.secrets["SUPABASE_URL"]
+        supabase_key = st.secrets["SUPABASE_KEY"]
+        gemini_api_key = st.secrets["GEMINI_API_KEY"]
+        openai_api_key = st.secrets["OPENAI_API_KEY"]
+        anthropic_api_key = st.secrets["ANTHROPIC_API_KEY"]
+        mistral_api_key = st.secrets["MISTRAL_API_KEY"]
     else:
         raise Exception()
 
