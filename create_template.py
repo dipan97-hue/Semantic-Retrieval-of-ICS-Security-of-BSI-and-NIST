@@ -43,6 +43,7 @@ list_of_files =[
     f'rag/rag_pipeline.py',
     'project_structure.txt',
     f'evaluation/ares.py',
+    f'evaluation/metrics.py',
     'gitignore'
     
     
