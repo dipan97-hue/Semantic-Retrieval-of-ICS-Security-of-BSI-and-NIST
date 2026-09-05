@@ -1,6 +1,12 @@
 import json
 import re
+import sys
 from datetime import datetime
+from pathlib import Path
+
+import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from rag.rag_pipeline import rag
 
@@ -28,7 +34,11 @@ QUERIES = [
     "What security controls should be applied to PLC programming interfaces? ",
     "How should user authentication be implemented in ICS systems? ",
 
-    "What authentication mechanisms are recommended for OT environments?"
+    "What authentication mechanisms are recommended for OT environments?",
+    "How should OT backups be protected? ",
+    "What recovery procedures should be established for industrial systems? ",
+    "What security requirements apply to SCADA systems? ",
+    "How should ICS assets be identified and managed? "
 
     
 ]
@@ -144,3 +154,5 @@ with open(
 print("\nFinished.")
 print(f"Total evaluations: {len(all_results)}")
 
+df = pd.DataFrame(all_results)
+df.to_csv("evaluation/llm_judge_results.csv", encoding="utf-8", index=False)
