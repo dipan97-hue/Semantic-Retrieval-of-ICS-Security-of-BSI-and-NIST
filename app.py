@@ -3,7 +3,6 @@ import pandas as pd
 import html
 from rag.rag_pipeline import rag
 from llm.role_generator import generate_role, usecase_generation
-from llm.llm_judge import evaluate_complete_rag as evaluate_rag_response
 import os
 import warnings
 import logging
@@ -85,7 +84,6 @@ st.sidebar.title("⚙️ Settings")
 model_name = st.sidebar.selectbox(
     "Select LLM",
     [
-        "Mistral",
         "gemini-3.1-flash-lite",
         "gpt-5.4-nano",
         "claude-haiku-4-5",
@@ -460,7 +458,6 @@ elif page == "🧠 Multi-LLM Comparison":
 
         - GPT-5.4-nano
         - Gemini 3.1 Flash Lite
-        - Mistral
         - Claude Haiku 4.5
         """
     )
@@ -498,11 +495,11 @@ elif page == "🧠 Multi-LLM Comparison":
                     k=k
                 )
 
-                mistral_result = rag(
-                    query=compare_query,
-                    model_name="Mistral",
-                    k=k
-                )
+                # mistral_result = rag(
+                #     query=compare_query,
+                #     model_name="Mistral",
+                #     k=k
+                # )
 
                 anthropic_result = rag(
                     query=compare_query,
@@ -513,7 +510,7 @@ elif page == "🧠 Multi-LLM Comparison":
             st.session_state["comparison_results"] = {
                 "GPT-5.4-nano": gpt_5_result,
                 "Gemini 3.1 Flash Lite": gemini_result,
-                "Mistral": mistral_result,
+                # "Mistral": mistral_result,
                 "Claude Haiku 4.5": anthropic_result
             }
 
@@ -650,9 +647,9 @@ elif page == "🧠 Multi-LLM Comparison":
                 results["Gemini 3.1 Flash Lite"]
             )
 
-            mistral_answer = clean_answer(
-                results["Mistral"]
-            )
+            # mistral_answer = clean_answer(
+            #     results["Mistral"]
+            # )
 
             claude_answer = clean_answer(
                 results["Claude Haiku 4.5"]
@@ -666,7 +663,7 @@ elif page == "🧠 Multi-LLM Comparison":
 
             gemini_html = format_answer(gemini_answer)
 
-            mistral_html = format_answer(mistral_answer)
+            # mistral_html = format_answer(mistral_answer)
 
             claude_html = format_answer(claude_answer)
 
@@ -781,9 +778,6 @@ elif page == "🧠 Multi-LLM Comparison":
                             Gemini 3.1 Flash Lite
                         </th>
 
-                        <th>
-                            Mistral
-                        </th>
 
                         <th>
                             Claude Haiku 4.5
@@ -803,10 +797,6 @@ elif page == "🧠 Multi-LLM Comparison":
 
                         <td>
                             {gemini_html}
-                        </td>
-
-                        <td>
-                            {mistral_html}
                         </td>
 
                         <td>

@@ -12,8 +12,8 @@ def generate_answer(model_name, prompt):
     if model_name == 'gemini-3.1-flash-lite':
         return generate_gemini(prompt)
     
-    if model_name == 'Mistral':
-        return generate_mistral(prompt)
+    #if model_name == 'Mistral':
+    #  return generate_mistral(prompt)
     
     if model_name == 'gpt-5.4-nano':
         return generate_gpt_5(prompt)

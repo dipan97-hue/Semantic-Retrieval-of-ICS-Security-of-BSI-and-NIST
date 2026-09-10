@@ -78,20 +78,32 @@ def evaluate_response(query, context, answer, results, model_name):
         return "Evaluation failed."
 
 
-def rag(query, model_name, k=10):
+def rag(query, model_name, k=10, run_judge=True):
 
     if not query or not query.strip():
 
         return {
             "query": query,
+            "model_name": model_name,
+            "top_k": k,
             "answer": "Please enter a query.",
             "results": [],
             "context": "",
             "evaluation_output": ""
         }
+
+
     print("1. Query received")
+
     query_embedding = emb_query(query)
+
     print("2. Embedding done")
+
+
+    # =====================================================
+    # RETRIEVAL
+    # =====================================================
+
     results = retrieve(
         query_embedding,
         k
@@ -100,25 +112,43 @@ def rag(query, model_name, k=10):
     print("3. RETRIEVAL RESULTS:")
     print(results)
 
-    if not isinstance(results, list) or len(results) == 0:
+
+    # =====================================================
+    # RETRIEVAL FAILURE
+    # =====================================================
+
+    if (
+        not isinstance(results, list)
+        or len(results) == 0
+    ):
 
         return {
             "query": query,
+            "model_name": model_name,
+            "top_k": k,
             "answer": "No relevant requirements were found.",
             "results": [],
             "context": "",
             "evaluation_output": ""
         }
 
+
+    # =====================================================
+    # RELEVANCE CHECK
+    # =====================================================
+
     top_score = results[0].get(
         "similarity",
         0
     )
 
+
     if top_score < 0.40:
 
         return {
             "query": query,
+            "model_name": model_name,
+            "top_k": k,
             "answer":
                 """
 No relevant OT cybersecurity requirements were found.
@@ -141,30 +171,80 @@ Please ask questions related to:
             "evaluation_output": ""
         }
 
-    clean_results = enrich_results(results)
+
+    # =====================================================
+    # ENRICH RESULTS
+    # =====================================================
+
+    clean_results = enrich_results(
+        results
+    )
+
+
+    # =====================================================
+    # BUILD CONTEXT + PROMPT
+    # =====================================================
 
     context, prompt = generate_context(
         query,
         clean_results
     )
-    print("4. Context and prompt built")
+
+    print(
+        "4. Context and prompt built"
+    )
+
+
+    # =====================================================
+    # GENERATE ANSWER
+    # =====================================================
+
     answer = generate_llm_answer(
         model_name,
         prompt
     )
-    print("5. Answer generated")
-    evaluation_output = evaluate_response(
-        query=query,
-        context=context,
-        answer=answer,
-        results=clean_results,
-        model_name=model_name
+
+    print(
+        "5. Answer generated"
     )
 
+
+    # =====================================================
+    # EXISTING LLM JUDGE
+    # =====================================================
+
+    evaluation_output = ""
+
+    if run_judge:
+
+        evaluation_output = evaluate_response(
+            query=query,
+            context=context,
+            answer=answer,
+            results=clean_results,
+            model_name=model_name
+        )
+
+
+    # =====================================================
+    # RETURN
+    # =====================================================
+
     return {
+
         "query": query,
+
+        "model_name": model_name,
+
+        "top_k": k,
+
         "answer": answer,
+
         "results": clean_results,
+
         "context": context,
-        "evaluation_output": evaluation_output
+
+        "evaluation_output":
+            evaluation_output
+
     }
