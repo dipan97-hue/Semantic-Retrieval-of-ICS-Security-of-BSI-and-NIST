@@ -1,6 +1,6 @@
 import re
 
-def split_into_chunks( text, chunk_size=350,overlap=75):
+def split_into_chunks( text, chunk_size=800,overlap=55):
 
     words = text.split()
 

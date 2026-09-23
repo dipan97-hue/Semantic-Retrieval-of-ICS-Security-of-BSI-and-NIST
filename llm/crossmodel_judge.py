@@ -94,19 +94,12 @@ def extract_json(response):
         pass
 
     # Try extracting JSON from surrounding text
-    match = re.search(
-        r"\{.*\}",
-        text,
-        re.DOTALL
-    )
+    match = re.search(r"\{.*\}",text,re.DOTALL)
 
     if match:
 
         try:
-
-            return json.loads(
-                match.group()
-            )
+            return json.loads(match.group())
 
         except Exception:
             pass

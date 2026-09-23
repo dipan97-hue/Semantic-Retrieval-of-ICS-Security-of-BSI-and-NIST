@@ -3,7 +3,7 @@ from etl.chunking import split_into_chunks
 from etl.lifecycle_bsi import extract_bsi_lifecycle as extract_lifecycle
 import fitz
 from etl.common import detect_normative, create_summary, extract_keywords
-from etl.cleaning import is_noise_title,  is_noise_title, is_reference_section, bsi_clean_content
+from etl.cleaning import  is_noise_title, is_reference_section, bsi_clean_content
 from etl.lifecycle_bsi import extract_bsi_lifecycle
 
 

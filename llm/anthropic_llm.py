@@ -14,4 +14,5 @@ def claude(prompt):
             {"role": "user", "content": prompt}
         ],
     )
+
     return response.content[0].text

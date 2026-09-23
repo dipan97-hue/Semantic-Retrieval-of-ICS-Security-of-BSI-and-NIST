@@ -214,3 +214,68 @@ def nist_clean_content(text: str) -> str:
     text = re.sub(r"\s+", " ", text).strip()
 
     return text
+
+def clean_iso(text: str) -> str:
+     # remove non-ascii
+        text = re.sub(r'[^\x00-\x7F]+', ' ', text)
+    
+        # remove URLs
+        text = re.sub(r"https?://\S+|www\.\S+", " ", text)
+    
+        # remove citations
+        text = re.sub(r"\[[^\]]+\]", " ", text)
+    
+        # remove figures
+        text = re.sub(
+            r"\bfig(?:ure)?\.?\s*\d+\.?",
+            " ",
+            text,
+            flags=re.IGNORECASE
+        )
+    
+        # remove tables
+        text = re.sub(
+            r"\btable\s*\d+\.?",
+            " ",
+            text,
+            flags=re.IGNORECASE
+        )
+    
+        # remove see references
+        text = re.sub(
+            r"\bsee\s+(table|figure|section|https?)\S*",
+            " ",
+            text,
+            flags=re.IGNORECASE
+        )
+    
+        # remove acronym references
+        text = re.sub(
+            r"\b[A-Z]{2,}\s*\([A-Z]{2,}\)",
+            " ",
+            text
+        )
+    
+        # fix broken words
+        text = re.sub(
+            r"(\b[\w]{2,})-\s+([\w]{2,}\b)",
+            r"\1\2",
+            text
+        )
+    
+        # remove legal refs
+        text = re.sub(
+            r"\bstat\.\s*\d+",
+            " ",
+            text,
+            flags=re.IGNORECASE
+        )
+    
+        # remove broken URL fragments
+        text = re.sub(r"https?:\S*", " ", text)
+    
+        # remove extra spaces
+        text = re.sub(r"\s+", " ", text).strip()
+    
+        return text
+    
