@@ -93,9 +93,8 @@ st.markdown(
     """
 AI-powered Retrieval-Augmented Generation (RAG) platform for:
 
-- NIST SP 800-82
-- BSI IT-Grundschutz
-- ICS / SCADA Cybersecurity
+- NIST SP 800-82: Cybersecurity for Industrial Control Systems
+- BSI IT-Grundschutz: Basic Security Measures for Information Technology
 - Semantic Requirement Mapping
 - Multi-LLM Security Analysis
 """
@@ -142,6 +141,12 @@ st.sidebar.markdown("---")
 # ============================================================
 
 PAGE_OPTIONS = [
+    
+    "📋 Google Form Information",
+
+    "🧑‍🔬 HITL Evaluation",
+
+    "🧠 Multi-LLM Comparison",
 
     "🤖 OT Security Assistant",
 
@@ -149,13 +154,9 @@ PAGE_OPTIONS = [
 
     "👤 Generate Roles",
 
-    "📊 Generate Use Cases",
+    "📊 Generate Use Cases"
+   
 
-    "🧑‍🔬 HITL Evaluation",
-
-    "🧠 Multi-LLM Comparison",
-
-    "📋 Google Form Information"
 ]
 
 
