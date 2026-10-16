@@ -629,7 +629,7 @@ BSI and NIST.
 
 
                     st.markdown(
-                        f"**BSI â†” NIST Similarity**  \n"
+                        f"**BSI and NIST Similarity**  \n"
                         f"{similarity}"
                     )
 
@@ -641,7 +641,7 @@ BSI and NIST.
                 st.markdown("---")
 
                 st.markdown(
-                    "## ðŸ”— Related Requirement"
+                    "## Related Requirement"
                 )
 
 
@@ -735,7 +735,7 @@ BSI and NIST.
                 else:
 
                     st.warning(
-                        "No semantic BSI â†” NIST "
+                        "No semantic BSI and NIST "
                         "relationship found for "
                         "this retrieved requirement."
                     )
@@ -1273,7 +1273,7 @@ elif page == "🧑‍🔬 HITL Evaluation":
 
 
             st.write(
-                "Compare this query across all four "
+                "Compare this query across all three "
                 "LLMs using the same Top-K value."
             )
 
@@ -1446,7 +1446,7 @@ if page == "🧠 Multi-LLM Comparison":
 
         st.info(
             f"Top-K is fixed to {compare_k}. "
-            "All four models will use this same Top-K value."
+            "All three models will use this same Top-K value."
         )
 
 
