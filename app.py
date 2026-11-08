@@ -5,7 +5,9 @@ import warnings
 import logging
 import re
 import markdown
-
+from Tara.engine import analyze_query
+from Tara.rag_bridge import retrieve_security_evidence
+from Tara.scoring import assess_attack_path, calculate_risk
 from rag.rag_pipeline import rag
 from llm.role_generator import generate_role, usecase_generation
 from config.hitl_config import HITL_CONFIG
@@ -231,116 +233,656 @@ if st.sidebar.button(
     st.rerun()
 
 
+
 # ============================================================
+# PAGE 1 — OT SECURITY ASSISTANT
+# AUTOMATIC RAG / TARA ROUTING
 # ============================================================
-# PAGE 1 â€” OT SECURITY ASSISTANT
+
 # ============================================================
+# PAGE 1 — OT SECURITY ASSISTANT
+# ORIGINAL RAG ANSWER + AUTOMATIC TARA ANALYSIS
 # ============================================================
 
 if page == "🤖 OT Security Assistant":
 
-    st.header(
-        "OT Security Requirements Assistant"
-    )
+    st.header("OT Security Requirements Assistant")
 
+    st.markdown("""
+    Ask cybersecurity questions related to:
 
-    st.markdown(
-        """
-Ask cybersecurity questions related to:
+    - PLC Security
+    - Authentication
+    - Backup & Recovery
+    - Access Control
+    - ICS / SCADA
+    - Network Segmentation
+    - Monitoring
+    - OT Security Controls
+    - Governance
 
-- PLC Security
-- Authentication
-- Backup & Recovery
-- Access Control
-- ICS / SCADA
-- Network Segmentation
-- Monitoring
-- OT Security Controls
-- Governance
-"""
-    )
-
+    The system automatically identifies whether additional
+    system-specific TARA analysis is required.
+    """)
 
     # ========================================================
-    # QUERY INPUT
+    # 1. USER QUERY
     # ========================================================
 
     query = st.text_area(
-        "Enter your query",
-        height=150
+        "Describe your OT security problem",
+        height=150,
+        placeholder=(
+            "Example: Our industrial PLC uses shared passwords "
+            "for programming access. An unauthorized person could "
+            "obtain these credentials and modify the PLC logic. "
+            "How should we assess and reduce this risk?"
+        ),
+        key="ot_security_query"
     )
 
-
     # ========================================================
-    # RUN ANALYSIS
+    # 2. RUN ANALYSIS
     # ========================================================
 
     if st.button(
-        "Run Analysis"
+        "Run Analysis",
+        key="run_ot_security_analysis"
     ):
 
         if not query.strip():
 
-            st.warning(
-                "Please enter a query."
+            st.warning("Please enter your query.")
+
+        else:
+
+            try:
+
+                with st.spinner(
+                    "Generating security analysis and checking "
+                    "whether TARA is required..."
+                ):
+
+                    result = analyze_query(
+                        query=query,
+                        model_name=model_name,
+                        k=k
+                    )
+
+                # --------------------------------------------
+                # SAVE COMPLETE ANALYSIS
+                # --------------------------------------------
+
+                st.session_state["analysis_results"] = result
+
+                st.session_state["analysis_query"] = query
+
+                st.session_state["rag_query"] = query
+
+                st.session_state["rag_k"] = k
+
+                # --------------------------------------------
+                # PRESERVE ORIGINAL RAG RESULT
+                # FOR EXISTING APPLICATION PAGES
+                # --------------------------------------------
+
+                rag_result = result.get("rag_result")
+
+                if rag_result:
+
+                    st.session_state["rag_results"] = rag_result
+
+                else:
+
+                    st.session_state.pop(
+                        "rag_results",
+                        None
+                    )
+
+                # Clear previous role/use-case outputs
+                st.session_state.pop("role_output", None)
+
+                st.session_state.pop("usecase_output", None)
+
+            except Exception as e:
+
+                st.error(
+                    f"Security analysis failed: {str(e)}"
+                )
+
+    # ========================================================
+    # 3. DISPLAY ANALYSIS RESULTS
+    # ========================================================
+
+    if "analysis_results" in st.session_state:
+
+        result = st.session_state["analysis_results"]
+
+        # ====================================================
+        # SECTION 1 — ORIGINAL RAG ANSWER
+        # ====================================================
+
+        st.divider()
+
+        st.header("Generated Security Analysis")
+
+        rag_result = result.get("rag_result", {})
+
+        if rag_result:
+
+            st.markdown(
+                rag_result.get(
+                    "answer",
+                    "No security answer generated."
+                )
             )
 
         else:
 
-            with st.spinner(
-                "Running your query, please wait..."
-            ):
+            st.warning(
+                "The original RAG answer is unavailable."
+            )
 
-                result = rag(
-                    query=query,
-                    model_name=model_name,
-                    k=k,
-                    run_judge=False
+        # ====================================================
+        # SECTION 2 — AUTOMATIC ROUTING
+        # ====================================================
+
+        st.divider()
+
+        st.subheader("Additional System Engineering Analysis")
+
+        classification = result.get(
+            "classification",
+            {}
+        )
+
+        if result.get("mode") == "RAG":
+
+            st.info(
+                "This query was identified as a general OT "
+                "cybersecurity question. Standard RAG analysis "
+                "was sufficient. Additional TARA analysis "
+                "was not required."
+            )
+
+            st.caption(
+                classification.get("reason", "")
+            )
+
+        # ====================================================
+        # SECTION 3 — TARA ANALYSIS
+        # ====================================================
+
+        elif result.get("mode") == "TARA":
+
+            st.success(
+                "A system-specific cybersecurity problem was "
+                "detected. Additional TARA analysis was performed."
+            )
+
+            st.caption(
+                classification.get("reason", "")
+            )
+
+            tara_result = result.get(
+                "tara_result",
+                {}
+            )
+
+            # -----------------------------------------------
+            # TARA EXECUTION ERROR
+            # -----------------------------------------------
+
+            if not tara_result:
+
+                st.error(
+                    "TARA analysis did not return a result."
                 )
 
+            elif tara_result.get("analysis_status") == "Failed":
 
-            st.session_state[
-                "rag_results"
-            ] = result
+                st.error(
+                    "TARA analysis failed: "
+                    + tara_result.get(
+                        "error",
+                        "Unknown error"
+                    )
+                )
 
+            else:
 
-            st.session_state[
-                "rag_query"
-            ] = query
+                tara_data = tara_result.get(
+                    "tara_data",
+                    {}
+                )
 
+                # -------------------------------------------
+                # 3.1 SYSTEM DEFINITION
+                # -------------------------------------------
 
-            st.session_state[
-                "rag_k"
-            ] = k
+                st.header("TARA System Engineering Analysis")
 
+                st.subheader("1. System Definition")
 
-    # ========================================================
-    # SHOW GENERATED ANSWER
-    # ========================================================
+                item = tara_data.get("item", {})
 
-    if "rag_results" in st.session_state:
+                st.write(
+                    "**System:**",
+                    item.get("name", "Not specified")
+                )
 
-        result = st.session_state[
-            "rag_results"
-        ]
+                st.write(
+                    item.get("description", "")
+                )
 
+                # -------------------------------------------
+                # 3.2 DSL VALIDATION
+                # -------------------------------------------
 
-        st.subheader(
-            "Generated Security Analysis"
-        )
+                st.subheader("2. DSL Validation")
 
+                if tara_result.get("analysis_status") == "Completed":
 
-        st.markdown(
-            result.get(
-                "answer",
-                "No answer generated."
-            )
-        )
+                    st.success(
+                        "TARA structure passed the implemented validations."
+                    )
 
+                else:
+
+                    st.warning(
+                        "TARA validation requires attention. "
+                        "Numerical risk calculations were not performed."
+                    )
+
+                    for error in tara_result.get(
+                        "validation_errors",
+                        []
+                    ):
+
+                        st.warning(error)
+
+                # -------------------------------------------
+                # 3.3 ENGINEERING REVIEW
+                # -------------------------------------------
+
+                review_items = tara_data.get(
+                    "human_review_required",
+                    []
+                )
+
+                assumptions = tara_data.get(
+                    "assumptions",
+                    []
+                )
+
+                if review_items or assumptions:
+
+                    st.subheader("3. Engineering Review")
+
+                    for review in review_items:
+
+                        st.warning(str(review))
+
+                    for assumption in assumptions:
+
+                        st.info(
+                            f"Assumption: {assumption}"
+                        )
+
+                # -------------------------------------------
+                # 3.4 IDENTIFIED ASSETS
+                # -------------------------------------------
+
+                st.subheader("4. Identified Assets")
+
+                assets = tara_data.get("assets", [])
+
+                if assets:
+
+                    st.dataframe(
+                        pd.DataFrame(assets),
+                        use_container_width=True,
+                        hide_index=True
+                    )
+
+                else:
+
+                    st.info("No assets identified.")
+
+                # -------------------------------------------
+                # 3.5 DAMAGE SCENARIOS
+                # -------------------------------------------
+
+                st.subheader("5. Damage Scenarios")
+
+                damage_scenarios = tara_data.get(
+                    "damage_scenarios",
+                    []
+                )
+
+                if damage_scenarios:
+
+                    st.dataframe(
+                        pd.DataFrame(damage_scenarios),
+                        use_container_width=True,
+                        hide_index=True
+                    )
+
+                else:
+
+                    st.info("No damage scenarios identified.")
+
+                # -------------------------------------------
+                # 3.6 THREAT SCENARIOS
+                # -------------------------------------------
+
+                st.subheader("6. Threat Scenarios")
+
+                threat_scenarios = tara_data.get(
+                    "threat_scenarios",
+                    []
+                )
+
+                if threat_scenarios:
+
+                    st.dataframe(
+                        pd.DataFrame(threat_scenarios),
+                        use_container_width=True,
+                        hide_index=True
+                    )
+
+                else:
+
+                    st.info("No threat scenarios identified.")
+
+                # -------------------------------------------
+                # 3.7 ATTACK PATH ANALYSIS
+                # -------------------------------------------
+
+                st.subheader("7. Attack Path Analysis")
+
+                attack_paths = tara_data.get(
+                    "attack_paths",
+                    []
+                )
+
+                if attack_paths:
+
+                    for path in attack_paths:
+
+                        with st.expander(
+                            f"Attack Path: {path.get('id', 'Unknown')}"
+                        ):
+
+                            st.write(
+                                "**Associated threat:**",
+                                path.get("threat_scenario_id")
+                            )
+
+                            steps = path.get("steps", [])
+
+                            if steps:
+
+                                st.dataframe(
+                                    pd.DataFrame(steps),
+                                    use_container_width=True,
+                                    hide_index=True
+                                )
+
+                else:
+
+                    st.info("No attack paths identified.")
+
+                # -------------------------------------------
+                # 3.8 RISK ASSESSMENT
+                # -------------------------------------------
+
+                st.subheader("8. Calculated Risk Assessment")
+
+                if tara_result.get("analysis_status") == "Completed":
+
+                    risk_results = tara_result.get(
+                        "risk_results",
+                        []
+                    )
+
+                    if risk_results:
+
+                        risk_df = pd.DataFrame([
+                            {
+                                "Attack Path": r["attack_path_id"],
+                                "Impact Rating": r["impact_rating"],
+                                "AFV": r["attack_path_result"][
+                                    "attack_feasibility_value"
+                                ],
+                                "Feasibility": r["attack_path_result"][
+                                    "attack_feasibility_rating"
+                                ],
+                                "Risk Value": r["risk_value"]
+                            }
+                            for r in risk_results
+                        ])
+
+                        st.dataframe(
+                            risk_df,
+                            use_container_width=True,
+                            hide_index=True
+                        )
+
+                        # Individual calculation details
+
+                        for r in risk_results:
+
+                            with st.expander(
+                                f"Calculation Details: "
+                                f"{r['attack_path_id']}"
+                            ):
+
+                                st.write("**Attack potential per step**")
+
+                                st.dataframe(
+                                    pd.DataFrame(
+                                        r["attack_path_result"]["steps"]
+                                    ),
+                                    use_container_width=True,
+                                    hide_index=True
+                                )
+
+                                col1, col2 = st.columns(2)
+
+                                with col1:
+
+                                    st.metric(
+                                        "Attack Feasibility Value",
+                                        r["attack_path_result"][
+                                            "attack_feasibility_value"
+                                        ]
+                                    )
+
+                                with col2:
+
+                                    st.metric(
+                                        "Risk Value",
+                                        r["risk_value"]
+                                    )
+
+                    else:
+
+                        st.info(
+                            "No risk results were generated."
+                        )
+
+                else:
+
+                    st.warning(
+                        "Risk calculation is pending until "
+                        "the TARA validation issues are resolved."
+                    )
+
+                # -------------------------------------------
+                # 3.9 CYBERSECURITY GOALS
+                # -------------------------------------------
+
+                st.subheader("9. Cybersecurity Goals")
+
+                goals = tara_data.get(
+                    "cybersecurity_goals",
+                    []
+                )
+
+                if goals:
+
+                    for index, goal in enumerate(goals, start=1):
+
+                        st.markdown(
+                            f"{index}. {goal}"
+                        )
+
+                else:
+
+                    st.info("No cybersecurity goals generated.")
+
+                # -------------------------------------------
+                # 3.10 CYBERSECURITY REQUIREMENTS
+                # -------------------------------------------
+
+                st.subheader("10. Cybersecurity Requirements")
+
+                requirements = tara_data.get(
+                    "cybersecurity_requirements",
+                    []
+                )
+
+                if requirements:
+
+                    for index, requirement in enumerate(
+                        requirements,
+                        start=1
+                    ):
+
+                        st.markdown(
+                            f"**Requirement {index}**"
+                        )
+
+                        st.write(requirement)
+
+                else:
+
+                    st.info(
+                        "No cybersecurity requirements generated."
+                    )
+
+                # -------------------------------------------
+                # 3.11 MITIGATIONS
+                # -------------------------------------------
+
+                st.subheader("11. Suggested Mitigations")
+
+                mitigations = tara_data.get(
+                    "mitigations",
+                    []
+                )
+
+                if mitigations:
+
+                    for mitigation in mitigations:
+
+                        st.markdown(f"- {mitigation}")
+
+                else:
+
+                    st.info("No mitigations generated.")
+
+                # -------------------------------------------
+                # 3.12 RISK TREATMENT
+                # -------------------------------------------
+
+                treatment = tara_data.get(
+                    "risk_treatment",
+                    {}
+                )
+
+                if treatment:
+
+                    st.subheader("12. Suggested Risk Treatment")
+
+                    st.write(
+                        "**Decision:**",
+                        treatment.get(
+                            "decision",
+                            "Not specified"
+                        )
+                    )
+
+                    st.write(
+                        "**Rationale:**",
+                        treatment.get(
+                            "rationale",
+                            "Not specified"
+                        )
+                    )
+
+                # -------------------------------------------
+                # 3.13 NIST / BSI EVIDENCE
+                # -------------------------------------------
+
+                st.subheader(
+                    "13. Supporting NIST and BSI Evidence"
+                )
+
+                evidence = tara_result.get(
+                    "evidence",
+                    []
+                )
+
+                if evidence:
+
+                    for index, entry in enumerate(
+                        evidence,
+                        start=1
+                    ):
+
+                        with st.expander(
+                            f"Requirement {index}: "
+                            f"{entry['requirement']}"
+                        ):
+
+                            st.markdown(
+                                "**Generated Security Guidance**"
+                            )
+
+                            st.markdown(
+                                entry.get("answer") or
+                                "No guidance generated."
+                            )
+
+                            st.markdown(
+                                "**Retrieved Knowledge-Base Context**"
+                            )
+
+                            st.text(
+                                entry.get("context") or
+                                "No context retrieved."
+                            )
+
+                else:
+
+                    st.info(
+                        "No supporting NIST/BSI evidence was retrieved."
+                    )
+
+                # -------------------------------------------
+                # COMPLETE TARA JSON
+                # -------------------------------------------
+
+                with st.expander(
+                    "View Complete Structured TARA Output"
+                ):
+
+                    st.json(tara_data)
 
 # ============================================================
-# ============================================================
-# PAGE 2 â€” GENERATE ROLES
+# PAGE 2  GENERATE ROLES
 # ============================================================
 # ============================================================
 
